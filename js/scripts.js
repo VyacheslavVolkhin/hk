@@ -26,6 +26,58 @@ document.addEventListener("DOMContentLoaded", function() {
 	});
 
 
+
+
+
+	//select toggle content visibility
+	const inputs = document.querySelectorAll(
+	"input[data-content], input[data-content-check], input[data-content-uncheck]"
+	);
+
+	inputs.forEach(function (input) {
+	toggleContent(input);
+	});
+
+	inputs.forEach((input) => {
+	input.addEventListener("click", function () {
+		document.querySelectorAll(".frm-content").forEach((content) => {
+		content.classList.remove("active");
+			});
+
+		inputs.forEach(toggleContent);
+		});
+	});
+
+	document.querySelectorAll(".btn[data-content]").forEach((button) => {
+	button.addEventListener("click", function () {
+		let dataContent = this.getAttribute("data-content");
+		this.disabled = true;
+		document
+		.querySelectorAll('.frm-content[data-content="' + dataContent + '"]')
+		.forEach((content) => {
+			content.classList.add("active");
+			});
+		return false;
+		});
+	});
+
+	function toggleContent(input) {
+	let selectContent;
+	if (input.checked) {
+		selectContent =
+		input.getAttribute("data-content-check") ||
+		input.getAttribute("data-content");
+		} else {
+		selectContent = input.getAttribute("data-content-uncheck");
+		}
+	document
+		.querySelectorAll('.frm-content[data-content="' + selectContent + '"]')
+		.forEach((content) => {
+		content.classList.add("active");
+		});
+	}
+
+
 	//mobile menu
 	const menuButton = document.querySelectorAll('.header .menu-inner-wrap .btn-menu');
 	for (i = 0;i < menuButton.length;i++) {
@@ -543,3 +595,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
 })
 
+
+	//fixed header
+	let header = document.querySelector(".header");
+	let headerHeight = header.offsetHeight;
+	let content = document.querySelector(".wrap");
+	document.addEventListener("DOMContentLoaded", function () {
+	  if (header) {
+		if (content) {
+		  content.style.paddingTop = headerHeight + "px";
+			}
+		}
+	});
+	window.addEventListener("resize", function () {
+	  let headerHeight = header.offsetHeight;
+	  if (content) {
+		content.style.paddingTop = headerHeight + "px";
+		}
+	});
+	 window.addEventListener("scroll", function () {
+	   const windowTop = window.pageYOffset;
+	   if (windowTop > 300) {
+		 document.querySelector(".wrap").classList.add("header-fixed");
+		} else {
+		 document.querySelector(".wrap").classList.remove("header-fixed");
+		}
+	});

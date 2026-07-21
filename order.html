@@ -538,7 +538,287 @@
                 </div>
                 <!--/page-title-box-->
 
-                3333
+                <!--content-outer-wrap-->
+                <div class="content-outer-wrap section-order">
+                    <!--content-wrap-->
+                    <div class="content-wrap">
+                        <!--form-content-box-->
+                        <form action="/" class="form-content-box" id="formorder">
+                            <!--frm-section-wrap-->
+                            <div class="frm-section-wrap section-box">
+                                <div class="section-title-wrap">
+                                    <div class="section-title">Личная информация</div>
+                                </div>
+                                <div class="section-content-wrap">
+                                    <div class="frm-row">
+                                        <div class="frm-field">
+                                            <div class="frm-field-input">
+                                                <div class="field-input-title">ФИО</div>
+                                                <div class="field-input-content">
+                                                    <input type="text" class="form-input" placeholder="" value="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="frm-row">
+                                        <div class="frm-field field-half">
+                                            <div class="frm-field-input">
+                                                <div class="field-input-title">Телефон</div>
+                                                <div class="field-input-content">
+                                                    <input
+                                                        type="tel"
+                                                        class="form-input"
+                                                        placeholder="+7 (___) ___-__-__"
+                                                        value=""
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="frm-field field-half">
+                                            <div class="frm-field-input">
+                                                <div class="field-input-title">Email</div>
+                                                <div class="field-input-content">
+                                                    <input type="email" class="form-input" placeholder="" value="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/frm-section-wrap-->
+                            <!--frm-section-wrap-->
+                            <div class="frm-section-wrap section-box">
+                                <div class="section-title-wrap">
+                                    <div class="section-title">Доставка</div>
+                                </div>
+                                <div class="section-content-wrap">
+                                    <div class="frm-row">
+                                        <div class="frm-field field-select-del">
+                                            <div class="frm-select-main">
+                                                <input
+                                                    type="radio"
+                                                    name="del"
+                                                    id="del01"
+                                                    data-content="del01"
+                                                    checked
+                                                />
+                                                <label for="del01">
+                                                    <div class="lbl-title">Самовывоз</div>
+                                                    <div class="lbl-info">Бесплатно, из 3 магазинов</div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="frm-field field-select-del">
+                                            <div class="frm-select-main">
+                                                <input type="radio" name="del" id="del02" data-content="del02" />
+                                                <label for="del02">
+                                                    <div class="lbl-title">Курьером</div>
+                                                    <div class="lbl-info">Укажите адрес доставки</div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="frm-field field-select-del">
+                                            <div class="frm-select-main">
+                                                <input type="radio" name="del" id="del03" data-content="del03" />
+                                                <label for="del03">
+                                                    <div class="lbl-title">
+                                                        Транспортная компания
+                                                        <div class="lbl-info">Рассчитать доставку</div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="frm-content" data-content="del01">
+                                        <div class="frm-row">
+                                            <div class="frm-field">
+                                                <div class="frm-field-input">
+                                                    <div class="field-input-title">Выберите пункт доставки</div>
+                                                    <div class="field-input-action">
+                                                        <a href="" class="link-main">Посмотреть на карте</a>
+                                                    </div>
+                                                    <div class="field-input-content">
+                                                        <select class="form-input" required>
+                                                            <option disabled hidden value="">Выбрать</option>
+                                                            <!--placeholder-->
+                                                            <option selected>ул. Красная площадь д1</option>
+                                                            <option>Пункт списка</option>
+                                                            <option>Пункт списка</option>
+                                                            <option>Пункт списка</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="frm-content" data-content="del02">
+                                        <div class="frm-row">
+                                            <div class="frm-field">
+                                                <div class="frm-field-input">
+                                                    <div class="field-input-title">Выберите адрес доставки</div>
+                                                    <div class="field-input-action">
+                                                        <a href="" class="link-main">Посмотреть на карте</a>
+                                                    </div>
+                                                    <div class="field-input-content">
+                                                        <select class="form-input" required>
+                                                            <option disabled hidden value="">Выбрать</option>
+                                                            <!--placeholder-->
+                                                            <option selected>ул. Красная площадь д1</option>
+                                                            <option>Пункт списка</option>
+                                                            <option>Пункт списка</option>
+                                                            <option>Пункт списка</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="frm-content" data-content="del03">
+                                        <div class="frm-row">
+                                            <div class="frm-field">
+                                                <div class="frm-field-input">
+                                                    <div class="field-input-title">Рассчитать доставку</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/frm-section-wrap-->
+                            <!--frm-section-wrap-->
+                            <div class="frm-section-wrap section-box">
+                                <div class="section-title-wrap">
+                                    <div class="section-title">Способ оплаты</div>
+                                </div>
+                                <div class="section-content-wrap">
+                                    <div class="frm-row">
+                                        <div class="frm-field field-select-pay">
+                                            <div class="frm-select-main">
+                                                <input type="radio" name="pay" id="pay01" />
+                                                <label for="pay01">
+                                                    <div class="lbl-title">Онлайн-оплата картой</div>
+                                                    <div class="lbl-info">
+                                                        Онлайн оплата по реквизитам карты вашего банка
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="frm-field field-select-pay">
+                                            <div class="frm-select-main">
+                                                <input type="radio" name="pay" id="pay02" />
+                                                <label for="pay02">
+                                                    <div class="lbl-title">Оплатить частями</div>
+                                                    <div class="lbl-info">4 платежа по 500 р. картой любого банка</div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="frm-field field-select-pay">
+                                            <div class="frm-select-main">
+                                                <input type="radio" name="pay" id="pay03" checked />
+                                                <label for="pay03">
+                                                    <div class="lbl-title">Наличными или картой</div>
+                                                    <div class="lbl-info">При получении</div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="frm-field field-select-pay">
+                                            <div class="frm-select-main">
+                                                <input type="radio" name="pay" id="pay04" />
+                                                <label for="pay04">
+                                                    <div class="lbl-title">Оплата через СБП</div>
+                                                    <div class="lbl-info">
+                                                        Подтвердите платеж в банковском приложении
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/frm-section-wrap-->
+                            <!--frm-submit-wrap-->
+                            <div class="frm-submit-wrap elm-hidden-mobile">
+                                <div class="frm-row">
+                                    <div class="frm-field">
+                                        <button type="submit" class="btn">
+                                            <div class="button-title">Завершить оформление</div>
+                                        </button>
+                                    </div>
+                                    <div class="frm-field">
+                                        <a href="" class="btn button-link">
+                                            <div class="button-title">Вернуться к покупкам</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/frm-submit-wrap-->
+                        </form>
+                        <!--/form-content-box-->
+                    </div>
+                    <!--/content-wrap-->
+
+                    <!--side-wrap-->
+                    <div class="side-wrap">
+                        <div class="side-panel-fix">
+                            <!--side-info-box-->
+                            <div class="side-info-box section-box">
+                                <div class="side-title-wrap">
+                                    <div class="side-title">Ваш заказ</div>
+                                </div>
+                                <div class="side-content-wrap">
+                                    <div class="elm-row">
+                                        <div class="row-title">Товаров</div>
+                                        <div class="row-value">200 шт</div>
+                                    </div>
+                                    <div class="elm-row">
+                                        <div class="row-title">Общий вес</div>
+                                        <div class="row-value">3 кг</div>
+                                    </div>
+                                    <div class="elm-row">
+                                        <div class="row-title">Доставка</div>
+                                        <div class="row-value">
+                                            Самовывоз - Бесплатно
+                                            <div class="row-value-info">ул. Красная площадь д1</div>
+                                        </div>
+                                    </div>
+                                    <div class="elm-row">
+                                        <div class="row-title">Оплата</div>
+                                        <div class="row-value">При получении</div>
+                                    </div>
+                                    <form action="/" class="frm-main-input">
+                                        <input type="text" class="form-input" placeholder="Введите промокод" />
+                                    </form>
+                                    <div class="elm-row row-total">
+                                        <div class="row-title">Итого</div>
+                                        <div class="row-value">2000 ₽</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/side-info-box-->
+
+                            <div class="form-content-box elm-hidden-desktop">
+                                <!--frm-submit-wrap-->
+                                <div class="frm-submit-wrap">
+                                    <div class="frm-row">
+                                        <div class="frm-field">
+                                            <button type="submit" class="btn" form="formorder">
+                                                <div class="button-title">Завершить оформление</div>
+                                            </button>
+                                        </div>
+                                        <div class="frm-field">
+                                            <a href="" class="btn button-link">
+                                                <div class="button-title">Вернуться к покупкам</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/frm-submit-wrap-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--/side-wrap-->
+                </div>
+                <!--/content-outer-wrap-->
             </div>
             <!-- /page -->
 
