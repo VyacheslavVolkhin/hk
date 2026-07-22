@@ -382,6 +382,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	const tabsBlocks = document.querySelectorAll('.js-tab-block')
 	const tabsButtonTitle = document.querySelectorAll('.js-tab-title')
 	const tabsButtonContent = document.querySelectorAll('.js-tab-content')
+	const tabActivateButtons = document.querySelectorAll('[data-tab-activate]')
 	function tabsActiveStart() {
 		for (iTab = 0; iTab < tabsBlocks.length; iTab++) {
 			if (tabsBlocks[iTab].classList.contains('active')) {
@@ -422,6 +423,17 @@ document.addEventListener("DOMContentLoaded", function() {
 				//e.stopPropagation()
 				return false
 			}
+		})
+	}
+	for (i = 0; i < tabActivateButtons.length; i++) {
+		tabActivateButtons[i].addEventListener('click', function (e) {
+			//e.preventDefault()
+			const targetTab = this.dataset.tabActivate
+			const targetButton = document.querySelector(`[data-tab="${targetTab}"]`)
+			if (targetButton) {
+				targetButton.click()
+			}
+			return false
 		})
 	}
 	tabsActiveStart()
@@ -534,7 +546,11 @@ document.addEventListener("DOMContentLoaded", function() {
 			pagination: {
 				el: paginationEl,
 				clickable: true,
-				//type: 'progressbar',
+				renderBullet: function (index, className) {
+					const slideEl = this.slides[index];
+					const title = slideEl?.getAttribute("data-title") || index + 1;
+					return `<span class="${className}">${title}</span>`;
+				},
 			},
 			autoplay: false,
 			navigation: {
