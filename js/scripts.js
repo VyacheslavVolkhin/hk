@@ -129,6 +129,44 @@ document.addEventListener("DOMContentLoaded", function() {
 			return false;
 		});
 	});
+	// Дополнительная функциональность для фильтров на десктопе
+	function handleFilterInteractions() {
+		const filterMain = document.querySelector('.js-filter-main');
+		if (!filterMain) return;
+		filterMain.addEventListener('click', function(e) {
+			if (window.innerWidth >= 1024) {
+				const clickedTgl = e.target.closest('.js-btn-tgl');
+				if (clickedTgl) {
+					const allActiveTgls = filterMain.querySelectorAll('.js-btn-tgl.active');
+					const currentSection = clickedTgl.closest('.filter-section-wrap');
+					
+					allActiveTgls.forEach(function(activeTgl) {
+						const activeSection = activeTgl.closest('.filter-section-wrap');
+						if (activeSection !== currentSection) {
+							activeTgl.classList.remove('active');
+						}
+					});
+				}
+			}
+		});
+		document.addEventListener('click', function(e) {
+			if (window.innerWidth >= 1024) {
+				const clickedInsideFilter = e.target.closest('.filter-section-content');
+				const clickedTgl = e.target.closest('.js-btn-tgl');
+				
+				if (!clickedInsideFilter && !clickedTgl) {
+					const allActiveTgls = filterMain.querySelectorAll('.js-btn-tgl.active');
+					allActiveTgls.forEach(function(activeTgl) {
+						activeTgl.classList.remove('active');
+					});
+				}
+			}
+		});
+	}
+	handleFilterInteractions();
+	
+	
+	
 
 	//mask phone
 	let telInputs = document.querySelectorAll('input[type="tel"]:not(.frm-field-phone input[type="tel"])');

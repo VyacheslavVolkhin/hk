@@ -578,16 +578,536 @@
                             </a>
                         </div>
                         <div class="action-wrap">
-                            <a href="" class="btn">
+                            <a href="" class="btn button-filter-toggle js-btn-tgl">
                                 <div class="button-ico">
                                     <img
                                         src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='-5%20-5%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_86_2458)'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0.500002%200C0.312708%200%200.14112%200.104674%200.055418%200.271209C-0.0302842%200.437745%20-0.0157272%200.638212%200.0931351%200.790619L5%207.66023V13.5C5%2013.6844%205.10149%2013.8538%205.26407%2013.9408C5.42665%2014.0278%205.62392%2014.0183%205.77735%2013.916L8.77735%2011.916C8.91645%2011.8233%209%2011.6672%209%2011.5V7.66023L13.9069%200.790619C14.0157%200.638212%2014.0303%200.437745%2013.9446%200.271209C13.8589%200.104674%2013.6873%200%2013.5%200H0.500002Z'%20fill='%23E31E24'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_86_2458'%3e%3crect%20width='14'%20height='14'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
                                         alt=""
                                     />
                                 </div>
-                                <div class="button-title">Развернуть фильтр</div>
+                                <div class="button-title">
+                                    <div class="button-title-text">Развернуть фильтр</div>
+                                    <div class="button-title-text-active">Свернуть фильтр</div>
+                                </div>
                             </a>
                         </div>
+                    </div>
+                    <div class="filter-inner-wrap">
+                        <!--filter-box-->
+                        <form action="/" class="filter-box js-filter-main">
+                            <div class="filter-content-wrap">
+                                <!--filter-section-wrap-->
+                                <div class="filter-section-wrap">
+                                    <div class="filter-section-title js-btn-tgl">Категории</div>
+                                    <div class="filter-section-content">
+                                        <div class="filter-section-inner">
+                                            <ul class="menu">
+                                                <li>
+                                                    <div class="frm-select select-button">
+                                                        <input type="checkbox" id="filterbutton01" checked />
+                                                        <label for="filterbutton01">
+                                                            <div class="button-ico">
+                                                                <img src="./img/menu01.svg" alt="" />
+                                                            </div>
+                                                            <div class="button-title">
+                                                                Болты
+                                                                <span class="button-title-info">125</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="frm-select select-button">
+                                                        <input type="checkbox" id="filterbutton02" />
+                                                        <label for="filterbutton02">
+                                                            <div class="button-ico">
+                                                                <img src="./img/menu02.svg" alt="" />
+                                                            </div>
+                                                            <div class="button-title">
+                                                                Гайки
+                                                                <span class="button-title-info">125</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="frm-select select-button">
+                                                        <input type="checkbox" id="filterbutton03" />
+                                                        <label for="filterbutton03">
+                                                            <div class="button-ico">
+                                                                <img src="./img/menu03.svg" alt="" />
+                                                            </div>
+                                                            <div class="button-title">
+                                                                Шурупы
+                                                                <span class="button-title-info">125</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="frm-select select-button">
+                                                        <input type="checkbox" id="filterbutton04" />
+                                                        <label for="filterbutton04">
+                                                            <div class="button-ico">
+                                                                <img src="./img/menu04.svg" alt="" />
+                                                            </div>
+                                                            <div class="button-title">
+                                                                Шайбы и стопорные кольца
+                                                                <span class="button-title-info">125</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="frm-select select-button">
+                                                        <input type="checkbox" id="filterbutton05" />
+                                                        <label for="filterbutton05">
+                                                            <div class="button-ico">
+                                                                <img src="./img/menu05.svg" alt="" />
+                                                            </div>
+                                                            <div class="button-title">
+                                                                Штифты
+                                                                <span class="button-title-info">125</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="frm-select select-button">
+                                                        <input type="checkbox" id="filterbutton06" />
+                                                        <label for="filterbutton06">
+                                                            <div class="button-ico">
+                                                                <img src="./img/menu06.svg" alt="" />
+                                                            </div>
+                                                            <div class="button-title">
+                                                                Заклепки
+                                                                <span class="button-title-info">125</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="frm-select select-button">
+                                                        <input type="checkbox" id="filterbutton07" />
+                                                        <label for="filterbutton07">
+                                                            <div class="button-ico">
+                                                                <img src="./img/menu07.svg" alt="" />
+                                                            </div>
+                                                            <div class="button-title">
+                                                                Вставки
+                                                                <span class="button-title-info">125</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="frm-select select-button">
+                                                        <input type="checkbox" id="filterbutton08" />
+                                                        <label for="filterbutton08">
+                                                            <div class="button-ico">
+                                                                <img src="./img/menu08.svg" alt="" />
+                                                            </div>
+                                                            <div class="button-title">
+                                                                Гвозди
+                                                                <span class="button-title-info">125</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="frm-select select-button">
+                                                        <input type="checkbox" id="filterbutton09" />
+                                                        <label for="filterbutton09">
+                                                            <div class="button-ico">
+                                                                <img src="./img/menu09.svg" alt="" />
+                                                            </div>
+                                                            <div class="button-title">
+                                                                Инструменты
+                                                                <span class="button-title-info">125</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="frm-select select-button">
+                                                        <input type="checkbox" id="filterbutton10" />
+                                                        <label for="filterbutton10">
+                                                            <div class="button-ico">
+                                                                <img src="./img/menu10.svg" alt="" />
+                                                            </div>
+                                                            <div class="button-title">
+                                                                Штифты и ключи
+                                                                <span class="button-title-info">125</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="frm-select select-button">
+                                                        <input type="checkbox" id="filterbutton11" />
+                                                        <label for="filterbutton11">
+                                                            <div class="button-ico">
+                                                                <img src="./img/menu11.svg" alt="" />
+                                                            </div>
+                                                            <div class="button-title">
+                                                                Анкера
+                                                                <span class="button-title-info">125</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="frm-select select-button">
+                                                        <input type="checkbox" id="filterbutton12" />
+                                                        <label for="filterbutton12">
+                                                            <div class="button-ico">
+                                                                <img src="./img/menu12.svg" alt="" />
+                                                            </div>
+                                                            <div class="button-title">
+                                                                Фитинги для труб
+                                                                <span class="button-title-info">125</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="frm-select select-button">
+                                                        <input type="checkbox" id="filterbutton13" />
+                                                        <label for="filterbutton13">
+                                                            <div class="button-ico">
+                                                                <img src="./img/menu13.svg" alt="" />
+                                                            </div>
+                                                            <div class="button-title">
+                                                                Зажимы
+                                                                <span class="button-title-info">125</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="frm-select select-button">
+                                                        <input type="checkbox" id="filterbutton14" />
+                                                        <label for="filterbutton14">
+                                                            <div class="button-ico">
+                                                                <img src="./img/menu14.svg" alt="" />
+                                                            </div>
+                                                            <div class="button-title">
+                                                                Резьбовые стержни
+                                                                <span class="button-title-info">125</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="frm-select select-button">
+                                                        <input type="checkbox" id="filterbutton15" />
+                                                        <label for="filterbutton15">
+                                                            <div class="button-ico">
+                                                                <img src="./img/menu15.svg" alt="" />
+                                                            </div>
+                                                            <div class="button-title">
+                                                                Шпильки
+                                                                <span class="button-title-info">125</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="frm-select select-button">
+                                                        <input type="checkbox" id="filterbutton16" />
+                                                        <label for="filterbutton16">
+                                                            <div class="button-ico">
+                                                                <img src="./img/menu16.svg" alt="" />
+                                                            </div>
+                                                            <div class="button-title">
+                                                                Такелаж
+                                                                <span class="button-title-info">125</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="frm-select select-button">
+                                                        <input type="checkbox" id="filterbutton17" />
+                                                        <label for="filterbutton17">
+                                                            <div class="button-ico">
+                                                                <img src="./img/menu17.svg" alt="" />
+                                                            </div>
+                                                            <div class="button-title">
+                                                                Инженерные детали
+                                                                <span class="button-title-info">125</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="frm-select select-button">
+                                                        <input type="checkbox" id="filterbutton18" />
+                                                        <label for="filterbutton18">
+                                                            <div class="button-ico">
+                                                                <img src="./img/menu18.svg" alt="" />
+                                                            </div>
+                                                            <div class="button-title">
+                                                                Перфорированный крипеж
+                                                                <span class="button-title-info">125</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="frm-select select-button">
+                                                        <input type="checkbox" id="filterbutton19" />
+                                                        <label for="filterbutton19">
+                                                            <div class="button-ico">
+                                                                <img src="./img/menu19.svg" alt="" />
+                                                            </div>
+                                                            <div class="button-title">
+                                                                Дюбеля
+                                                                <span class="button-title-info">125</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="frm-select select-button">
+                                                        <input type="checkbox" id="filterbutton20" />
+                                                        <label for="filterbutton20">
+                                                            <div class="button-ico">
+                                                                <img src="./img/menu20.svg" alt="" />
+                                                            </div>
+                                                            <div class="button-title">
+                                                                Гвозди
+                                                                <span class="button-title-info">125</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="frm-select select-button">
+                                                        <input type="checkbox" id="filterbutton21" />
+                                                        <label for="filterbutton21">
+                                                            <div class="button-ico">
+                                                                <img src="./img/menu21.svg" alt="" />
+                                                            </div>
+                                                            <div class="button-title">
+                                                                Скобы
+                                                                <span class="button-title-info">125</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="filter-section-back">
+                                            <a href="" class="button-filter-more btn button-arrow button-arrow-back">
+                                                <div class="button-title">В каталог</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/filter-section-wrap-->
+                                <!--filter-section-wrap-->
+                                <div class="filter-section-wrap">
+                                    <div class="filter-section-title js-btn-tgl">Стоимость</div>
+                                    <div class="filter-section-content">
+                                        <div class="filter-section-range">
+                                            <div class="frm-field-range">
+                                                <div id="range-price-slider"></div>
+                                                <div class="field-range-wrap">
+                                                    <div class="field-range">
+                                                        <div class="field-range-title">от</div>
+                                                        <div class="field-range-input">
+                                                            <input
+                                                                type="number"
+                                                                class="form-input"
+                                                                id="range-price-slider-min"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div class="field-range">
+                                                        <div class="field-range-title">до</div>
+                                                        <div class="field-range-input">
+                                                            <input
+                                                                type="number"
+                                                                class="form-input"
+                                                                id="range-price-slider-max"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/filter-section-wrap-->
+                                <!--filter-section-wrap-->
+                                <div class="filter-section-wrap">
+                                    <div class="filter-section-title js-btn-tgl">Стандарт</div>
+                                    <div class="filter-section-content">
+                                        <div class="filter-section-inner">
+                                            <div class="frm-select select-main">
+                                                <input type="checkbox" id="filter01-01" />
+                                                <label for="filter01-01">DIN 912</label>
+                                            </div>
+                                            <div class="frm-select select-main">
+                                                <input type="checkbox" id="filter01-02" checked />
+                                                <label for="filter01-02">DIN 933</label>
+                                            </div>
+                                            <div class="frm-select select-main">
+                                                <input type="checkbox" id="filter01-03" />
+                                                <label for="filter01-03">DIN 931</label>
+                                            </div>
+                                            <div class="frm-select select-main">
+                                                <input type="checkbox" id="filter01-04" />
+                                                <label for="filter01-04">ASME B16.5/B18.2.2</label>
+                                            </div>
+                                            <div class="frm-select select-main">
+                                                <input type="checkbox" id="filter01-05" />
+                                                <label for="filter01-05">DIN 912</label>
+                                            </div>
+                                            <div class="frm-select select-main">
+                                                <input type="checkbox" id="filter01-06" />
+                                                <label for="filter01-06">DIN 933</label>
+                                            </div>
+                                            <div class="frm-select select-main">
+                                                <input type="checkbox" id="filter01-07" />
+                                                <label for="filter01-07">DIN 931</label>
+                                            </div>
+                                            <div class="frm-select select-main">
+                                                <input type="checkbox" id="filter01-08" />
+                                                <label for="filter01-08">ASME B16.5/B18.2.2</label>
+                                            </div>
+                                        </div>
+                                        <div class="filter-section-more">
+                                            <a
+                                                href=""
+                                                class="button-filter-more btn button-arrow button-arrow-toggle js-btn-tgl"
+                                            >
+                                                <div class="button-title">
+                                                    <div class="button-title-text">Развернуть еще</div>
+                                                    <div class="button-title-text-active">Свернуть</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/filter-section-wrap-->
+                                <!--filter-section-wrap-->
+                                <div class="filter-section-wrap">
+                                    <div class="filter-section-title js-btn-tgl">Диаметр</div>
+                                    <div class="filter-section-content">
+                                        <div class="filter-section-inner">
+                                            <div class="frm-select select-main">
+                                                <input type="checkbox" id="filter02-01" />
+                                                <label for="filter02-01">1’</label>
+                                            </div>
+                                            <div class="frm-select select-main">
+                                                <input type="checkbox" id="filter02-02" />
+                                                <label for="filter02-02">3/4’</label>
+                                            </div>
+                                            <div class="frm-select select-main">
+                                                <input type="checkbox" id="filter02-03" />
+                                                <label for="filter02-03">7/8’</label>
+                                            </div>
+                                            <div class="frm-select select-main">
+                                                <input type="checkbox" id="filter02-04" />
+                                                <label for="filter02-04">3/8’</label>
+                                            </div>
+                                            <div class="frm-select select-main">
+                                                <input type="checkbox" id="filter02-05" />
+                                                <label for="filter02-05">1’</label>
+                                            </div>
+                                            <div class="frm-select select-main">
+                                                <input type="checkbox" id="filter02-06" />
+                                                <label for="filter02-06">3/4’</label>
+                                            </div>
+                                            <div class="frm-select select-main">
+                                                <input type="checkbox" id="filter02-07" />
+                                                <label for="filter02-07">7/8’</label>
+                                            </div>
+                                            <div class="frm-select select-main">
+                                                <input type="checkbox" id="filter02-08" />
+                                                <label for="filter02-08">3/8’</label>
+                                            </div>
+                                        </div>
+                                        <div class="filter-section-more">
+                                            <a
+                                                href=""
+                                                class="button-filter-more btn button-arrow button-arrow-toggle js-btn-tgl"
+                                            >
+                                                <div class="button-title">
+                                                    <div class="button-title-text">Развернуть еще</div>
+                                                    <div class="button-title-text-active">Свернуть</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/filter-section-wrap-->
+                                <!--filter-section-wrap-->
+                                <div class="filter-section-wrap">
+                                    <div class="filter-section-title js-btn-tgl">Материал</div>
+                                    <div class="filter-section-content">
+                                        <div class="filter-section-inner">
+                                            <div class="frm-select select-main">
+                                                <input type="checkbox" id="filter03-01" />
+                                                <label for="filter03-01">Сталь</label>
+                                            </div>
+                                            <div class="frm-select select-main">
+                                                <input type="checkbox" id="filter03-02" />
+                                                <label for="filter03-02">Нержавеющая сталь</label>
+                                            </div>
+                                            <div class="frm-select select-main">
+                                                <input type="checkbox" id="filter03-03" />
+                                                <label for="filter03-03">Медь</label>
+                                            </div>
+                                            <div class="frm-select select-main">
+                                                <input type="checkbox" id="filter03-04" checked />
+                                                <label for="filter03-04">Латунь</label>
+                                            </div>
+                                            <div class="frm-select select-main">
+                                                <input type="checkbox" id="filter03-05" />
+                                                <label for="filter03-05">Сталь</label>
+                                            </div>
+                                            <div class="frm-select select-main">
+                                                <input type="checkbox" id="filter03-06" />
+                                                <label for="filter03-06">Нержавеющая сталь</label>
+                                            </div>
+                                            <div class="frm-select select-main">
+                                                <input type="checkbox" id="filter03-07" />
+                                                <label for="filter03-07">Медь</label>
+                                            </div>
+                                            <div class="frm-select select-main">
+                                                <input type="checkbox" id="filter03-08" />
+                                                <label for="filter03-08">Латунь</label>
+                                            </div>
+                                        </div>
+                                        <div class="filter-section-more">
+                                            <a
+                                                href=""
+                                                class="button-filter-more btn button-arrow button-arrow-toggle js-btn-tgl"
+                                            >
+                                                <div class="button-title">
+                                                    <div class="button-title-text">Развернуть еще</div>
+                                                    <div class="button-title-text-active">Свернуть</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/filter-section-wrap-->
+                            </div>
+                            <div class="filter-actions-wrap">
+                                <div class="frm-row">
+                                    <div class="frm-field">
+                                        <button type="submit" class="btn">
+                                            <div class="button-title">Подобрать</div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <!--/filter-box-->
                     </div>
                 </div>
                 <!--/info-lead-box-->
